@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "Memory Game",
-    "slug": "mynewproject",
-    "version": "1.1.0",
-    "icon": "./assets/icon2.png",
+    "name": "Examples",
+    "slug": "Examples",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -20,11 +21,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "android": {
-      "package": "com.memorygame1234.game",
-      "permissions": [],
-      "versionCode": 2
     }
   }
 }

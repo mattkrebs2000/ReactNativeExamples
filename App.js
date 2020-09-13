@@ -8,6 +8,11 @@ export default function App() {
   console.log(useKeyboard());
 
   const {landscape} = useDeviceOrientation();
+  console.log("landscappe " + landscape);
+
+  const {height,width} = useDimensions().window;
+  console.log("height and width " + height + " " + width);
+
   return (
     <View style={styles.container}>
      <View style={{backgroundColor:"dodgerblue",width: "100%",height: landscape ? "10%" : "89%"}}></View>

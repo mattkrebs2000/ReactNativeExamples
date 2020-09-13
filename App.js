@@ -6,9 +6,11 @@ export default function App() {
   console.log(useDimensions());
   console.log(useDeviceOrientation());
   console.log(useKeyboard());
+
+  const {landscape} = useDeviceOrientation();
   return (
     <View style={styles.container}>
-     <Text>Hello</Text>
+     <View style={{backgroundColor:"dodgerblue",width: "100%",height: landscape ? "10%" : "89%"}}></View>
     </View>
   );
 };

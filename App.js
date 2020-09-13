@@ -1,30 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Dimensions, StyleSheet, Text, View } from 'react-native';
-
-// import Header from "./components/Header";
-import Change from "./components/MobileChangeOfOrientation";
-
-// import Score from "./components/Score";
-
-
+import { StyleSheet, View, Text } from "react-native";
+import { useDimensions, useDeviceOrientation, useKeyboard } from "@react-native-community/hooks";
 
 export default function App() {
+  console.log(useDimensions());
+  console.log(useDeviceOrientation());
+  console.log(useKeyboard());
   return (
     <View style={styles.container}>
-     
-     
-      <Change />
-
-    
+     <Text>Hello</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'gray',
     alignItems: 'center',
     justifyContent: 'center',
   },
